@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'No tag found with that id!' });
       return;
     }
-    res.status(200).json(tagData);
+    res.status(200).json([tagData]);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -48,10 +48,10 @@ router.put('/:id', async (req, res) => {
       },
     });
     if (!tagData[0]) {
-      res.status(404).json({ message: 'No tag with this id!' });
+      res.status(404).json({ message: 'No tag with this id or data entered was already the same!' });
       return;
     }
-    res.status(200).json(tagData);
+    res.status(200).json([tagData, {message: `Tag successfully updated`}]);
   } catch (err) {
     res.status(500).json(err);
   }

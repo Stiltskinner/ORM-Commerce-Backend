@@ -17,6 +17,7 @@
 ## Description
 This is the back-end for a fictional commerce website. It uses sequelize models to build and maintain a database with tables for products, categories of products, and tags for products. It has routes for getting information, creating new products, categories, and tags, updating all the aforementioned, and deleting all of the aforementioned. It also validates the data to ensure it is the right kind.
 
+[Demonstration Video](https://drive.google.com/file/d/1XyvTkAnNoNonwSbwqz9ArkdZO_Q56DIb/view)
     
 ## License
 **MIT** - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. 
