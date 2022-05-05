@@ -64,7 +64,6 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    console.log(tagData);
     if (tagData === 0) {
       res.status(404).json({message: `id ${req.params.id} does not exist`});
       return
